@@ -6,7 +6,7 @@ function acharSensi() {
     if (!isNaN(sensiQueUsa) && !isNaN(sensiValorantQueUsa) && !isNaN(sensiQueQuer)) {
         let resultado = (sensiValorantQueUsa * sensiQueQuer) / sensiQueUsa;
         resultado = resultado.toFixed(3); // Limita o resultado a três números após a vírgula
-        document.getElementById('resultado').innerText = `A sensibilidade que você tem que usar no Valorant é ${resultado}`;
+        document.getElementById('resultado').innerText = `A sensibilidade que você tem que usar é ${resultado}`;
 
         // Atualiza o valor das caixas de entrada
         document.getElementById('caixa1').value = sensiQueUsa;
