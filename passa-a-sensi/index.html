@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container__imagem">
+        <p id="mensagem1" class="pergunta">Qual sensibilidade você usa atualmente no mouse?</p>
+        <input type="number" id="caixa1" name="caixa1"><br>
+
+        <p class="pergunta">Qual sensibilidade você usa no Valorant?</p>
+        <input type="number" id="caixa2" name="caixa2" step="0.01"><br>
+
+        <p class="pergunta">Para qual sensibilidade do mouse você quer ir?</p>
+        <input type="number" id="caixa3" name="caixa3"><br>
+
+        <div class="chute container__botoes">
+            <button onclick="acharSensi()" id="btn-acharSensi" class="container__botao">Calcular</button>
+            <button onclick="limpar()" class="container__botao">Reiniciar</button>
+        </div>
+
+        <p id="resultado" class="resultado"></p>
+    </div>
+    <a href="https://www.twitch.tv/tutunargs" class="icone-link">
+        <img src="./img/twitch.png" alt="Ícone" class="icone">
+    </a>
+    <a href="https://www.instagram.com/tutunargs/" class="icone-link-instagram">
+        <img src="./img/instagram.png" alt="Ícone" class="icone">
+    </a>
+    <script src="aSensi.js"></script>
+</body>
+</html>

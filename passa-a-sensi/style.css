@@ -1,0 +1,84 @@
+
+body {
+  background-image: url("img/fundo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(255, 123, 237);
+  font-family: "Josefin Sans", sans-serif;
+  overflow: hidden;
+}
+
+
+input {
+  padding: 5px;
+  margin: 1px 0;
+  border: 3px solid #812c2c;
+  border-radius: 50px;
+}
+
+.container__imagem {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  height: 100vh; 
+}
+
+input {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.container__botoes {
+  margin-top: 20px; 
+}
+
+.container__botao {
+  padding: 10px 20px;
+  background-color: rgb(255, 33, 218);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resultado {
+  font-size: 24px; 
+  font-weight: bold;
+  font-family: "Josefin Sans", sans-serif;
+  color: #FF5733; 
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; 
+}
+
+.pergunta {
+  font-weight: bold; 
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; 
+}
+
+.container__botao:hover {
+  background-color: rgb(99, 11, 84);
+}
+
+
+.icone-link {
+  position: fixed; 
+  bottom: 10px; 
+  right: 10px; 
+  z-index: 9999; 
+}
+
+.icone {
+  width: 40px; 
+  height: 40px;
+}
+
+.icone-link-instagram {
+  position: fixed; 
+  bottom: 70px; 
+  right: 10px; 
+  z-index: 9999; 
+}
