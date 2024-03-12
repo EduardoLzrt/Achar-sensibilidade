@@ -1,17 +1,17 @@
 function acharSensi() {
-    let sensiQueUsa = parseFloat(document.getElementById('caixa1').value);
-    let sensiValorantQueUsa = parseFloat(document.getElementById('caixa2').value);
-    let sensiQueQuer = parseFloat(document.getElementById('caixa3').value);
+    let sensiQueUsaMouse = parseFloat(document.getElementById('caixa1').value);
+    let sensiDoJogo = parseFloat(document.getElementById('caixa2').value);
+    let sensiQueQuerMouse = parseFloat(document.getElementById('caixa3').value);
 
-    if (!isNaN(sensiQueUsa) && !isNaN(sensiValorantQueUsa) && !isNaN(sensiQueQuer)) {
-        let resultado = (sensiValorantQueUsa * sensiQueQuer) / sensiQueUsa;
-        resultado = resultado.toFixed(3); // Limita o resultado a três números após a vírgula
-        document.getElementById('resultado').innerText = `A sensibilidade que você tem que usar é ${resultado}`;
+    if (!isNaN(sensiQueUsaMouse) && !isNaN(sensiDoJogo) && !isNaN(sensiQueQuerMouse)) {
+        let resultado = (sensiQueUsaMouse * sensiDoJogo) / sensiQueQuerMouse;
+        resultado = resultado.toFixed(3); 
+        document.getElementById('resultado').innerText = `A sensibilidade que você tem que usar no Valorant é ${resultado}`;
 
         // Atualiza o valor das caixas de entrada
-        document.getElementById('caixa1').value = sensiQueUsa;
-        document.getElementById('caixa2').value = sensiValorantQueUsa;
-        document.getElementById('caixa3').value = sensiQueQuer;
+        document.getElementById('caixa1').value = sensiQueUsaMouse;
+        document.getElementById('caixa2').value = sensiDoJogo;
+        document.getElementById('caixa3').value = sensiQueQuerMouse;
     } else {
         alert('Use apenas números.');
     }
