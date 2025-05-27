@@ -7,3 +7,7 @@
 
 
 -**Tem condições simples, como a sua sensibilidade do mouse, do jogo, e a sensibilidade de mouse que deseja, ele faz uma conta que te passa um multiplicador de sensibilidade, que seja igual em relação ao jogo.**
+
+## O site está no Vercel. Confira abaixo.
+
+https://acharsensibilidade-two.vercel.app/
